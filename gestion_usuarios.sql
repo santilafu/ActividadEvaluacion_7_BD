@@ -1,7 +1,6 @@
 
-
 --  1. Resetear la contraseña del usuario
-ALTER USER recetas IDENTIFIED BY RECETARIO;
+ALTER USER recetas IDENTIFIED BY 1234;
 
 --  2. Desbloquear la cuenta (por si está bloqueada)
 ALTER USER recetas ACCOUNT UNLOCK;
@@ -15,5 +14,5 @@ GRANT CONNECT, RESOURCE TO recetas;
 --  (Opcional) Verificar usuarios existentes
 SELECT username FROM all_users;
 
---  (Opcional) Eliminar usuario si necesitas empezar desde cero
--- DROP USER recetas CASCADE;
+--  (Opcional) Eliminar usuario si necesitas empezar desde cero;
+--  DROP USER recetas CASCADE;
